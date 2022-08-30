@@ -28,7 +28,7 @@ CC := xc8-cc
 
 TARGET_ARCH := -mcpu=$(MCU)#			# Target Arch flag
 CFLAGS := -O2 $(addprefix -I,$(INC_DIR))#	# Options for the xc8 compiler
-LFLAGS := -Wl,-Map=${BUILD_DIR}/${TARGET}.map -mrom=0x0-0x7FF
+LFLAGS := -Wl,-Map=${BUILD_DIR}/${TARGET}.map
 
 ###############################################################################
 #    Match n' Making    #
